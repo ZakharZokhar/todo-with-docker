@@ -1,9 +1,11 @@
 # ToDo list with docker
 
-### `docker-compose up --build`
-	Starts app in build mode
+### Starts app in build mode
+`docker-compose up --build`
 	
-### `docker-compose -f docker-compose.yml -f docker-compose.development.yml up --build`
-	Starts app in development mode
+	
+### Starts app in development mode
+`docker-compose -f docker-compose.yml -f docker-compose.development.yml up --build`
+	
 	
 

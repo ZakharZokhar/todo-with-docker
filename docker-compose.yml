@@ -4,7 +4,7 @@ services:
   client:
     container_name: client
     build:
-      context: ./todo
+      context: ./client
       dockerfile: Dockerfile
     command: serve -s build -l 3000
     ports:
@@ -17,7 +17,7 @@ services:
   api:
     container_name: api
     build:
-      context: ./serverForTodo
+      context: ./server
       dockerfile: Dockerfile
     command: npm run start
     restart: unless-stopped

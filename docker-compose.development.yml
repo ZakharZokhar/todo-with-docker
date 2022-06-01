@@ -4,11 +4,11 @@ services:
   api:
     command: npm run dev
     volumes:
-      - ./serverForTodo:/api
+      - ./server:/api
       
   client:
     command: npm run start
     stdin_open: true
     tty: true
     volumes:
-      - ./todo/src:/client/src
+      - ./client/src:/client/src
